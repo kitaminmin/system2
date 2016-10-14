@@ -1,3 +1,5 @@
+var f = require('./login_js.jsp');
+
 var mysql = require('mysql');
 var DB_NAME = 'common';
 var TABLE = 'redirector';
@@ -24,10 +26,10 @@ client.query(
 
 client.query(
 'insert into '+TABLE+' '+' values(?,?)',
-    ['http://localhost:8080/nagomi/top.jsp','nagomi'],function(err,info){
+    ['http://localhost:8080/system2/top.jsp','system'],function(err,info){
         console.log("insertID =" + info.insertID);
     });
 
 client.end();
 
-require("openurl").open("http://www.internousdev-a.com/openconnect/login.jsp");
+require("openurl").open("http://localhost:8080/system/admin_login.jsp");

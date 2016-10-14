@@ -9,6 +9,8 @@
 <title>LOGIN</title>
 </head>
 <body>
+	<jsp:include page="header.jsp" />
+
 <c:import url="http://localhost:8080/system/admin_login.jsp" />
 </body>
 </html>
