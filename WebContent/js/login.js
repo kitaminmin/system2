@@ -8,7 +8,7 @@ server.listen(9999);
 
 function requestServer(req:http.ServerRequest, res:http.ServerResponse):void {
 	var uri = url.parse(req.url, true);		// 第2引数trueでqueryストリングを解析する(getの時使う)
-	
+
 	if(uri.pathname == "/post") {
 		if(req.method.toLowerCase() === "post") {	// postメソッドなら
 			console.log("post");

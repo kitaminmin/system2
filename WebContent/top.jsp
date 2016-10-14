@@ -6,6 +6,14 @@
 <head>
 <meta charset="UTF-8">
 <title>TOP</title>
+<script type="text/javascript">
+function test(){
+	var os = navigator.platform;
+	alert(os);
+}
+</script>
+
+
 </head>
 <body>
 	<jsp:include page="header.jsp" />
@@ -17,7 +25,12 @@
 	<br>
 	<br>
 	<br>
-	<a href="login_js.jsp"><input type="button" value="LOGIN" /></a>
 
+	<!--<s:form method="post" action="test()"> -->
+	<!-- <input type="button" value="LOGIN" /> -->
+	<!-- <a href="login_js.jsp"><input type="button" value="LOGIN" /></a> -->
+<!--</s:form>-->
+
+<a href="javascript:test()">クリック</a>
 </body>
 </html>

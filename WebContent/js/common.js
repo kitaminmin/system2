@@ -1,4 +1,3 @@
-var f = require('./login_js.jsp');
 
 var mysql = require('mysql');
 var DB_NAME = 'common';
