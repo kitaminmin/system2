@@ -1,0 +1,17 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<title>WebページからEXEを起動する</title>
+<script type="text/javascript">
+	function up_notepad(){
+	var os = navigator.platform;
+	alert(os);
+	var shell = new ActiveXObject("WScript.Shell");
+	shell.run("notepad.exe");
+	}
+</script>
+</head>
+<body>
+<p><input type="button" value="メモ帳起動" onClick="up_notepad()"></p>
+</body>
+</html>

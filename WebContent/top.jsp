@@ -7,9 +7,11 @@
 <meta charset="UTF-8">
 <title>TOP</title>
 <script type="text/javascript">
-function test(){
+function ExecBat() {
 	var os = navigator.platform;
 	alert(os);
+	var shell = new ActiveXObject("WScript.Shell");
+	shell.run("C:\Users\internous\git\system2\bat\node.bat");
 }
 </script>
 
@@ -31,6 +33,6 @@ function test(){
 	<!-- <a href="login_js.jsp"><input type="button" value="LOGIN" /></a> -->
 <!--</s:form>-->
 
-<a href="javascript:test()">クリック</a>
+<button onclick="ExecBat()">バッチファイル実行</button>
 </body>
 </html>
