@@ -1,4 +1,3 @@
-
 var mysql = require('mysql');
 var DB_NAME = 'common';
 var TABLE = 'redirector';
@@ -31,4 +30,4 @@ client.query(
 
 client.end();
 
-require("openurl").open("http://localhost:8080/system/admin_login.jsp");
+require("openurl").open("http://localhost:8080/system2/login.jsp");

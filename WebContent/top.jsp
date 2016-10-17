@@ -10,10 +10,15 @@
 function ExecBat() {
 	var os = navigator.platform;
 	alert(os);
+	0
+
 	var shell = new ActiveXObject("WScript.Shell");
-	shell.run("C:\Users\internous\git\system2\bat\node.bat");
+	alert("hoge");
+	shell.run("\"C:\\Users\\internous\\git\\system2\\bat\\node.bat\"");
+// shell.run("C:\Users\internous\git\system2\bat\node.bat");
 }
 </script>
+
 
 
 </head>
